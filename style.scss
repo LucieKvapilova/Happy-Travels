@@ -1,0 +1,337 @@
+$backgroundcolor: #FAFAFA;
+$cerna: #000000;
+$seda: #8B8B8B;
+$modra: #407BFF;
+$bila: #ffffff;
+$svetlemodra: #407BFF1F;
+$font-family: "Montserrat", sans-serif;
+$font-size-light: 300;
+$font-size-regular: 400;
+$font-size-medium: 500;
+
+
+
+/*
+.element {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+*/
+
+
+
+
+.body {
+    background-color: $backgroundcolor;
+    border: 1px solid $seda;
+
+}
+
+.body_container {
+    width: 100%;
+}
+
+h1 {
+    color: $cerna;
+    font-family: $font-family;
+    font-weight: $font-size-medium;
+    font-size: 28px;
+}
+
+h2 {
+    color: $cerna;
+    font-family: $font-family;
+    font-weight: $font-size-medium;
+    font-size: 16px;
+}
+
+p {
+    color: $seda;
+    font-family: $font-family;
+    font-weight: $font-size-light;
+    font-size: 16px;
+}
+
+
+.blok2__frm p,
+.blok3__frm p {
+    color: $seda;
+    font-family: $font-family;
+    font-weight: $font-size-light;
+    font-size: 13px;
+}
+
+.blok1__btn--blue,
+.blok1__btn--grey {
+    color: $bila;
+    font-family: $font-family;
+    font-weight: $font-size-regular;
+    font-size: 14px;
+     //jak vycentrovat text vertikálně na střed?
+}
+
+
+
+/* ------ BLOK 1 ------ */
+.blok1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.picture {
+    background-image: url(images/happy-traveler.svg);
+}
+
+.blok1__btn {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.blok1__btn--blue,
+.blok1__btn--grey {
+    width: fit-content;
+    height: 40px;
+    text-align: center;
+    color: $bila;
+    font-family: $font-family;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 0 20px;
+}
+
+.blok1__btn--grey {
+    background-color: $seda;
+}
+
+.blok1__btn--blue {
+    background-color: $modra;
+}
+
+
+
+/* ------ BLOK 2 ------ */
+
+.blok2 {
+    text-align: center;
+    margin: 50px 30px;
+}
+
+.blok2__frm {
+    text-align: center;
+    
+}
+
+.blok2__frm--01,
+.blok2__frm--02,
+.blok2__frm--03 {
+    background-color: $bila;
+    border-radius: 10px;
+    box-shadow: 2px 2px $svetlemodra;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    //flex-wrap: nowrap;
+    margin: 10px 0;
+}
+
+.flex1 {
+    flex: 0 1 20%;
+}
+
+.flex2 {
+    flex: 0 1 75%;
+}
+
+
+/* ------ BLOK 3 ------ */
+
+.blok3 {
+    text-align: center;
+    margin: 70px 30px;
+}
+
+.blok3__frm {
+    text-align: center; //jak vycentrovat na střed? 
+}
+
+.blok3__frm--01,
+.blok3__frm--02,
+.blok3__frm--03 {
+    background-color: $bila;
+    border-radius: 10px;
+    box-shadow: 2px 2px $svetlemodra;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    //flex-wrap: nowrap;
+    margin: 10px 0;
+}
+
+.flex1 {
+    flex: 0 1 20%;
+}
+
+.flex2 {
+    flex: 0 1 75%;
+}
+
+
+
+/* ---------- TABLET - 640px ---------- */
+@media screen and (min-width: 640px) {
+    
+
+    /* ------ BLOK 1 ------ */
+    .blok1 {
+        margin: 80px;
+    }
+
+
+    .blok1__btn {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .blok1__btn--blue,
+    .blok1__btn--grey {
+        flex: 0 1 calc((100% - 30px) / 2);
+    }
+
+    /* ------ BLOK 2 ------ */
+    .blok2__text {
+        margin: 80px;
+        margin-bottom: 40px;
+    }
+
+    .blok2__frm {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .blok2__frm--01,
+    .blok2__frm--02,
+    .blok2__frm--03 {
+        border-radius: 10px;
+        height: 140px;
+        margin: 0px 10px 0 10px;
+        padding: 40px 0px 0px 0px;
+        display: block;
+    }
+
+    .blok2__frm--01 p,
+    .blok2__frm--02 p,
+    .blok2__frm--03 p {
+        padding: 0 20px 0 20px;
+    }
+
+    /* ------ BLOK 3 ------ */
+    .blok3__text {
+        margin: 80px;
+        margin-bottom: 40px;
+    }
+
+    .blok3__frm {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .blok3__frm--01,
+    .blok3__frm--02,
+    .blok3__frm--03 {
+        border-radius: 10px;
+        height: 140px;
+        margin: 0px 10px 0 10px;
+        padding: 40px 0px 0px 0px;
+        display: block;
+    }
+
+    .blok3__frm--01 p,
+    .blok3__frm--02 p,
+    .blok3__frm--03 p {
+        padding: 0 20px 0 20px;
+    }
+
+}
+
+/* ---------- DESKTOP - 1100px ---------- */
+@media screen and (min-width: 1100px) {
+    
+
+    /* ------ BLOK 1 ------ */
+    .blok1 {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .blok1__info,
+    .blok1__picture {
+        flex: 1 1 50%;
+    }
+
+    .blok1__text {
+        text-align: left;
+    }
+
+    /* ------ BLOK 2 ------ */
+
+    .blok2,
+    .blok3 {
+        display: flex;
+    }
+
+    .blok2 {
+        flex-direction: row-reverse;
+
+    }
+
+    .blok2__text,
+    .blok3__text {
+        flex: 1 1 40%;
+        margin: 20px;
+        text-align: left;
+    }
+
+    .blok2__frm,
+    .blok3__frm {
+        flex: 1 1 60%;
+    }
+
+    .blok2__frm,
+    .blok3__frm {       
+        margin: 0 30px 0 30px;
+    }
+
+
+    /* ------ BLOK 3 ------ */
+
+    .blok3 {
+        margin-left: 0 20px 0 30px;
+        margin-top: 90px;
+    }
+
+    .blok3__text {
+        flex: 1 1 45%;
+        padding: 20px 0 0 30px;
+    }
+
+    .blok3__frm {
+        flex: 1 1 55%;
+    }
+
+    .blok3__frm {       
+        padding: 0 0 0 20px;
+        margin-right: 0;
+    }
+
+    .blok3__text {
+        margin: 30px 0 0 20px;
+    }
+}
