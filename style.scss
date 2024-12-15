@@ -21,8 +21,6 @@ $font-size-medium: 500;
 */
 
 
-
-
 .body {
     background-color: $backgroundcolor;
     border: 1px solid $seda;
@@ -51,7 +49,7 @@ p {
     color: $seda;
     font-family: $font-family;
     font-weight: $font-size-light;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
@@ -69,8 +67,18 @@ p {
     font-family: $font-family;
     font-weight: $font-size-regular;
     font-size: 14px;
-     //jak vycentrovat text vertikálně na střed?
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
+.blok1__btn {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+/**/
 
 
 
@@ -87,13 +95,15 @@ p {
 .blok1__btn {
     margin: 0 auto;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .blok1__btn--blue,
 .blok1__btn--grey {
     width: fit-content;
     height: 40px;
-    text-align: center;
     color: $bila;
     font-family: $font-family;
     border-radius: 20px;
@@ -194,12 +204,14 @@ p {
     .blok1__btn {
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
     }
     
     .blok1__btn--blue,
     .blok1__btn--grey {
         flex: 0 1 calc((100% - 30px) / 2);
     }
+
 
     /* ------ BLOK 2 ------ */
     .blok2__text {
@@ -221,6 +233,8 @@ p {
         height: 140px;
         margin: 0px 10px 0 10px;
         padding: 40px 0px 0px 0px;
+        display: flex;
+        align-items: center;
         display: block;
     }
 
@@ -279,6 +293,11 @@ p {
     .blok1__text {
         text-align: left;
     }
+
+    .blok1__btn--blue {
+        padding-left: 20px;
+    }
+
 
     /* ------ BLOK 2 ------ */
 

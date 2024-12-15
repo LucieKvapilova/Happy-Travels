@@ -33,7 +33,7 @@ p {
   color: #8B8B8B;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .blok2__frm p,
@@ -50,8 +50,18 @@ p {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.blok1__btn {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/**/
 /* ------ BLOK 1 ------ */
 .blok1 {
   text-align: center;
@@ -65,6 +75,9 @@ p {
 .blok1__btn {
   margin: 0 auto;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .blok1__btn--blue,
@@ -72,7 +85,6 @@ p {
   width: -moz-fit-content;
   width: fit-content;
   height: 40px;
-  text-align: center;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   border-radius: 20px;
@@ -159,6 +171,7 @@ p {
   .blok1__btn {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
   .blok1__btn--blue,
   .blok1__btn--grey {
@@ -182,6 +195,8 @@ p {
     height: 140px;
     margin: 0px 10px 0 10px;
     padding: 40px 0px 0px 0px;
+    display: flex;
+    align-items: center;
     display: block;
   }
   .blok2__frm--01 p,
@@ -228,6 +243,9 @@ p {
   }
   .blok1__text {
     text-align: left;
+  }
+  .blok1__btn--blue {
+    padding-left: 20px;
   }
   /* ------ BLOK 2 ------ */
   .blok2,
